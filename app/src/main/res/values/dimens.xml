@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dim_m">8dp</dimen>
+    <dimen name="dim_s">2dp</dimen>
+    <dimen name="dimens_xxxl">40dp</dimen>
+    <dimen name="dim_sm">4dp</dimen>
+    <dimen name="txt_size_s">12sp</dimen>
+    <dimen name="txt_size_m">14sp</dimen>
+    <dimen name="item_rest_font_size">12sp</dimen>
+    <dimen name="iv_rate">24dp</dimen>
+    <dimen name="iv_rate_m">8dp</dimen>
+    <dimen name="info_v_m_s_e">16dp</dimen>
+    <dimen name="info_ly_h">50dp</dimen>
+    <dimen name="info_tv_m_s">18dp</dimen>
+    <dimen name="info_tv_val_size">16sp</dimen>
+    <dimen name="info_tv_title_size">18sp</dimen>
+    <dimen name="more_ly_h">50dp</dimen>
+    <dimen name="order_v_m_s_e">16dp</dimen>
+    <dimen name="more_tv_val_size">16sp</dimen>
+    <dimen name="more_iv_size">32dp</dimen>
+    <dimen name="more_iv_m_t_b">10dp</dimen>
+    <dimen name="more_iv_p">2dp</dimen>
+    <dimen name="more_tv_val_m_s">12dp</dimen>
+</resources>

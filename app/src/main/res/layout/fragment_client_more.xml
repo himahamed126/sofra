@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/st_tv_more"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/more" />
+
+    <LinearLayout
+        android:id="@+id/fragment_more_btn_offer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sh_more_btn"
+        android:layoutDirection="rtl">
+
+        <ImageView
+            style="@style/st_iv_more"
+            android:src="@drawable/ic_gift" />
+
+        <TextView
+            style="@style/st_tv_more"
+            android:text="@string/offer" />
+    </LinearLayout>
+
+    <View style="@style/st_divider" />
+
+    <LinearLayout
+        android:id="@+id/fragment_more_btn_connect_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sh_more_btn"
+        android:layoutDirection="rtl">
+
+        <ImageView
+            style="@style/st_iv_more"
+            android:src="@drawable/ic_mail_black" />
+
+        <TextView
+            style="@style/st_tv_more"
+            android:text="@string/contact_us" />
+    </LinearLayout>
+
+    <View style="@style/st_divider" />
+
+    <LinearLayout
+        android:id="@+id/fragment_more_btn_about_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sh_more_btn"
+        android:layoutDirection="rtl">
+
+        <ImageView
+            style="@style/st_iv_more"
+            android:src="@drawable/ic_idea" />
+
+        <TextView
+            style="@style/st_tv_more"
+            android:text="@string/about_app" />
+    </LinearLayout>
+
+    <View style="@style/st_divider" />
+
+    <LinearLayout
+        android:id="@+id/fragment_more_btn_change_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sh_more_btn"
+        android:layoutDirection="rtl">
+
+        <ImageView
+            style="@style/st_iv_more"
+            android:src="@drawable/ic_lock_black" />
+
+        <TextView
+            style="@style/st_tv_more"
+            android:text="@string/change_password" />
+    </LinearLayout>
+
+    <View style="@style/st_divider" />
+
+    <LinearLayout
+        android:id="@+id/fragment_more_btn_log_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sh_more_btn"
+        android:layoutDirection="rtl">
+
+        <ImageView
+            style="@style/st_iv_more"
+            android:src="@drawable/ic_exit" />
+
+        <TextView
+            style="@style/st_tv_more"
+            android:text="@string/log_out" />
+    </LinearLayout>
+
+    <View style="@style/st_divider" />
+</LinearLayout>

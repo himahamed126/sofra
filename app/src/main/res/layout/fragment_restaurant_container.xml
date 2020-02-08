@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/fragment_restaurant_container_ly_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fragment_restaurant_container_iv_restaurant_avatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:src="@color/gray" />
+
+        <TextView
+            android:id="@+id/fragment_restaurant_container_tv_restaurant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fragment_restaurant_container_iv_restaurant_avatar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/janna"
+            android:text="كنتاكى"
+            android:textColor="@color/pink"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/fragment_restaurant_container_tl_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_restaurant_container_ly_top"
+        android:background="@color/gray_light_1"
+        android:elevation="2dp"
+        app:tabIndicatorColor="@color/pink"
+        app:tabTextAppearance="@style/tab_text_pink" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/fragment_restaurant_container_vp_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fragment_restaurant_container_tl_tablayout"
+        android:background="@color/white" />
+</RelativeLayout>

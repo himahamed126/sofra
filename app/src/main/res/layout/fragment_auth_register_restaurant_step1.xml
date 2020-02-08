@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80C41262" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/fragment_register_ly_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/fragment_register_ed_restaurant_name"
+                    style="@style/auth_EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:drawableStart="@drawable/ic_person"
+                    android:hint="@string/restaurant_name" />
+
+                <EditText
+                    android:id="@+id/fragment_register_ed_email"
+                    style="@style/auth_EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:drawableStart="@drawable/ic_mail"
+                    android:hint="@string/email" />
+
+                <EditText
+                    android:id="@+id/fragment_register_ed_delivery_time"
+                    style="@style/auth_EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:drawableStart="@drawable/ic_time"
+                    android:hint="@string/delivery_time" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl">
+
+                    <ImageView
+                        android:id="@+id/fragment_register_restaurant_iv_sp_city"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:padding="4dp"
+                        android:src="@drawable/ic_home" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/fragment_register_restaurant_sp_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="16dp"
+                        android:layout_toEndOf="@id/fragment_register_restaurant_iv_sp_city"
+                        android:backgroundTint="@color/white" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/fragment_register_restaurant_sp_city"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginEnd="4dp"
+                        android:background="@color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl">
+
+                    <ImageView
+                        android:id="@+id/fragment_register_restaurant_iv_sp_region"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:padding="4dp"
+                        android:src="@drawable/ic_home" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/fragment_register_restaurant_sp_region"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_toEndOf="@id/fragment_register_restaurant_iv_sp_region"
+                        android:backgroundTint="@color/white" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/fragment_register_restaurant_sp_region"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginEnd="4dp"
+                        android:background="@color/white" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/fragment_register_ed_password"
+                    style="@style/auth_EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:drawableStart="@drawable/ic_lock"
+                    android:hint="@string/password" />
+
+                <EditText
+                    android:id="@+id/fragment_register_confirm_password"
+                    style="@style/auth_EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:drawableStart="@drawable/ic_lock"
+                    android:hint="@string/confirm_password" />
+
+                <EditText
+                    android:id="@+id/fragment_register_ed_minimum_order"
+                    style="@style/auth_EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:drawableStart="@drawable/ic_money"
+                    android:hint="@string/minimum_order" />
+
+                <EditText
+                    android:id="@+id/fragment_register_ed_delivery_charge"
+                    style="@style/auth_EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:drawableStart="@drawable/ic_money"
+                    android:hint="@string/delivery_charge" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/fragment_register_s1_btn_register"
+                style="@style/btn_pink"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_register_ly_top"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/continu" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

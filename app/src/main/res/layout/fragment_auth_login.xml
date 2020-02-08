@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80C41262" />
+
+    <TextView
+        android:id="@+id/fragment_login_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/janna"
+        android:gravity="center"
+        android:text="@string/log_in"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/fragment_login_ed_email"
+        style="@style/auth_EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_login_label"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:drawableStart="@drawable/ic_mail"
+        android:hint="@string/email" />
+
+    <EditText
+        android:id="@+id/fragment_login_ed_password"
+        style="@style/auth_EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_login_ed_email"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:drawableStart="@drawable/ic_lock"
+        android:hint="@string/password" />
+
+
+    <TextView
+        android:id="@+id/fragment_login_tv_forget_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_login_ed_password"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/janna"
+        android:text="@string/forget_password"
+        android:textColor="@color/gray_light"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/fragment_login_btn_login"
+        style="@style/btn_pink"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_login_tv_forget_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:layoutDirection="rtl">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:padding="2dp"
+            android:src="@drawable/ic_login" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/janna"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#2C2C2C"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/fragment_login_tv_dont_have_acc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/janna"
+            android:padding="5dp"
+            android:text="@string/dont_have_acc"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</RelativeLayout>

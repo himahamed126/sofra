@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_light"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-50dp"
+        android:layout_marginEnd="-50dp"
+        android:src="@drawable/food_img_2" />
+
+    <ImageView
+        android:id="@+id/fragment_splash_logo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_above="@id/fragment_splash_view"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:src="@drawable/logo" />
+
+    <View
+        android:id="@+id/fragment_splash_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:id="@+id/fragment_splash_layout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_splash_view"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:orientation="vertical"
+        android:paddingBottom="50dp">
+
+        <Button
+            android:id="@+id/fragment_splash_btn_request_food"
+            style="@style/btn_pink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/request_food"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/fragment_splash_btn_sell_food"
+            style="@style/btn_pink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/sell_food"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-80dp"
+        android:layout_marginBottom="-80dp"
+        android:src="@drawable/food_img_1" />
+</RelativeLayout>

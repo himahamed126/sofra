@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_ly_h"
+        android:layoutDirection="rtl">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/info_tv_m_s"
+            android:fontFamily="@font/janna"
+            android:text="@string/available"
+            android:textColor="@color/black"
+            android:textSize="@dimen/info_tv_title_size" />
+
+        <TextView
+            android:id="@+id/fragment_restaurant_info_tv_available"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/janna"
+            android:textColor="@color/black"
+            android:textSize="@dimen/info_tv_val_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/info_v_m_s_e"
+            android:layout_marginEnd="@dimen/info_v_m_s_e"
+            android:background="@color/gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_ly_h"
+        android:layoutDirection="rtl">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/info_tv_m_s"
+            android:fontFamily="@font/janna"
+            android:text="@string/city"
+            android:textColor="@color/black"
+            android:textSize="@dimen/info_tv_title_size" />
+
+        <TextView
+            android:id="@+id/fragment_restaurant_info_tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/janna"
+            android:textColor="@color/black"
+            android:textSize="@dimen/info_tv_val_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/info_v_m_s_e"
+            android:layout_marginEnd="@dimen/info_v_m_s_e"
+            android:background="@color/gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_ly_h"
+        android:layoutDirection="rtl">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/info_tv_m_s"
+            android:fontFamily="@font/janna"
+            android:text="@string/region"
+            android:textColor="@color/black"
+            android:textSize="@dimen/info_tv_title_size" />
+
+        <TextView
+            android:id="@+id/fragment_restaurant_info_tv_region"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/janna"
+            android:textColor="@color/black"
+            android:textSize="@dimen/info_tv_val_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/info_v_m_s_e"
+            android:layout_marginEnd="@dimen/info_v_m_s_e"
+            android:background="@color/gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_ly_h"
+        android:layoutDirection="rtl">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/info_tv_m_s"
+            android:fontFamily="@font/janna"
+            android:text="@string/minim_charge_"
+            android:textColor="@color/black"
+            android:textSize="@dimen/info_tv_title_size" />
+
+        <TextView
+            android:id="@+id/fragment_restaurant_info_tv_minim_charge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/janna"
+            android:textColor="@color/black"
+            android:textSize="@dimen/info_tv_val_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/info_v_m_s_e"
+            android:layout_marginEnd="@dimen/info_v_m_s_e"
+            android:background="@color/gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_ly_h"
+        android:layoutDirection="rtl">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/info_tv_m_s"
+            android:fontFamily="@font/janna"
+            android:text="@string/delivery_charge"
+            android:textColor="@color/black"
+            android:textSize="@dimen/info_tv_title_size" />
+
+        <TextView
+            android:id="@+id/fragment_restaurant_info_tv_delivery_charge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/janna"
+            android:textColor="@color/black"
+            android:textSize="@dimen/info_tv_val_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/info_v_m_s_e"
+            android:layout_marginEnd="@dimen/info_v_m_s_e"
+            android:background="@color/gray" />
+    </RelativeLayout>
+</LinearLayout>

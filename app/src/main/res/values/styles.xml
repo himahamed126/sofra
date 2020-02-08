@@ -1,0 +1,107 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="cv_ed_style">
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layoutDirection">rtl</item>
+        <item name="cardCornerRadius">20dp</item>
+        <item name="cardBackgroundColor">@color/gray_light_1</item>
+        <item name="cardElevation">2dp</item>
+    </style>
+
+    <style name="Spinner">
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:dropDownWidth">200dp</item>
+    </style>
+
+    <style name="btn_pink">
+        <item name="android:fontFamily">@font/janna</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/sh_pink_gra_btn</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="st_iv_more">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginStart">12dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="st_tv_more">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginStart">12dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/janna</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="st_divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="android:background">@color/gray</item>
+    </style>
+
+    <style name="tab_text_pink" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/janna</item>
+        <item name="android:textColor">@color/pink</item>
+    </style>
+
+    <style name="tab_text_blue" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/janna</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">#D50000</item>
+        <item name="colorSwitchThumbNormal">#f1f1f1</item>
+        <item name="android:colorForeground">#42221f1f
+        </item>
+    </style>
+
+    <style name="auth_EditText">
+        <item name="android:fontFamily">@font/janna</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:layoutDirection">rtl</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:backgroundTint">@color/white</item>
+    </style>
+
+
+    <style name="BottomNavigationView">
+        <item name="android:fontFamily">@font/janna</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/black</item>
+    </style>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="18dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_light_1">
+
+        <TextView
+            android:id="@+id/reject_dialog_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/janna"
+            android:gravity="center"
+            android:text="@string/reason_cancellation"
+            android:textColor="@color/pink"
+            android:textSize="22sp" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/reject_dialog_cv_comment"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/reject_dialog_tv_title"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardCornerRadius="16dp">
+
+            <EditText
+                android:id="@+id/reject_dialog_ed_comment"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="@string/enter_reason_cancellation"
+                android:padding="12dp"
+                android:textSize="14sp" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/reject_dialog_btn_cancel"
+            style="@style/btn_pink"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reject_dialog_cv_comment"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/cancel" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
