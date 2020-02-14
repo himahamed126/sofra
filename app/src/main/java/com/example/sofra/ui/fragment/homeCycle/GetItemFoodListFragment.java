@@ -32,6 +32,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 import static com.example.sofra.data.api.RetrofitClient.getClient;
+import static com.example.sofra.data.local.SharedPreferencesManger.*;
 import static com.example.sofra.data.local.SofraConstans.REST_API_TOKEN;
 import static com.example.sofra.helper.HelperMethod.dismissProgressDialog;
 import static com.example.sofra.helper.HelperMethod.replace;
@@ -50,7 +51,8 @@ public class GetItemFoodListFragment extends BaseFragment {
     private Unbinder unbinder;
 
     public CategoryData categoryData;
-    private String TAG = "get Item food list";
+
+    private static final String TAG = "GetItemFoodListFragment";
 
     @Nullable
     @Override
@@ -66,7 +68,9 @@ public class GetItemFoodListFragment extends BaseFragment {
         foodItemsList = new ArrayList<>();
         fragmentItemFoodListRv.setLayoutManager(layoutManager);
 
-        Log.d(TAG, String.valueOf(categoryData.getId()));
+        Log.i(TAG, LoadData(getActivity(), REST_API_TOKEN));
+        Log.i(TAG, String.valueOf(categoryData.getId()));
+
         getFoodItem();
 
         return view;
@@ -75,7 +79,7 @@ public class GetItemFoodListFragment extends BaseFragment {
 
     private void getFoodItem() {
         showProgressDialog(getActivity(), getString(R.string.please_wait));
-        apiServices.getAllFoodItem(SharedPreferencesManger.LoadData(getActivity(), REST_API_TOKEN), categoryData.getId()).enqueue(new Callback<Foodlist>() {
+        apiServices.getAllFoodItem(LoadData(getActivity(), REST_API_TOKEN), categoryData.getId()).enqueue(new Callback<Foodlist>() {
             @Override
             public void onResponse(Call<Foodlist> call, Response<Foodlist> response) {
                 dismissProgressDialog();

@@ -186,7 +186,7 @@ public class RegisterClientFragment extends BaseFragment {
                 register();
                 break;
             case R.id.fragment_register_client_iv_add_image:
-                HelperMethod.openGallery(getActivity(), mAlbumFiles, new Action<ArrayList<AlbumFile>>() {
+                openGallery(getActivity(), mAlbumFiles, new Action<ArrayList<AlbumFile>>() {
                     @Override
                     public void onAction(@NonNull ArrayList<AlbumFile> result) {
                         imagePath = result.get(0).getPath();
