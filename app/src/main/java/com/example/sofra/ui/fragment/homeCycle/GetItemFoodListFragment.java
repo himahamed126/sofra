@@ -15,7 +15,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.sofra.R;
 import com.example.sofra.adapter.ItemFoodAdapter;
 import com.example.sofra.data.api.ApiServices;
-import com.example.sofra.data.local.SharedPreferencesManger;
 import com.example.sofra.data.model.foodlist.Foodlist;
 import com.example.sofra.data.model.foodlist.Item;
 import com.example.sofra.data.model.publicData.CategoryData;
@@ -32,7 +31,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 import static com.example.sofra.data.api.RetrofitClient.getClient;
-import static com.example.sofra.data.local.SharedPreferencesManger.*;
+import static com.example.sofra.data.local.SharedPreferencesManger.LoadData;
 import static com.example.sofra.data.local.SofraConstans.REST_API_TOKEN;
 import static com.example.sofra.helper.HelperMethod.dismissProgressDialog;
 import static com.example.sofra.helper.HelperMethod.replace;
