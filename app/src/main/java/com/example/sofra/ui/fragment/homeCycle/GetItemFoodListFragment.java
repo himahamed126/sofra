@@ -51,7 +51,7 @@ public class GetItemFoodListFragment extends BaseFragment {
 
     public CategoryData categoryData;
 
-    private static final String TAG = "GetItemFoodListFragment";
+    private static final String TAG = "Get FoodList Fragment";
 
     @Nullable
     @Override
